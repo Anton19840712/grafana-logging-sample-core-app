@@ -1,0 +1,1 @@
+# grafana-logging-sample-core-app
