@@ -4,16 +4,14 @@ namespace api.console;
 
 public class RandomTest(ILogger logger)
 {
-	private readonly ILogger _logger = logger;
-
 	public void PrintRandomModels(int numberOfModels)
 	{
-		_logger.LogInformation("Start generating...");
+		logger.LogInformation("Start generating info...");
 
 		while (numberOfModels > 0)
 		{
 			var fields = GenerateRandomModel();
-			_logger.LogInformation($"Model: {fields[0]}, Year: {fields[1]}, Color: {fields[2]}");
+			logger.LogInformation($"Model: {fields[0]}, Year: {fields[1]}, Color: {fields[2]}");
 			numberOfModels--;
 		}
 	}
