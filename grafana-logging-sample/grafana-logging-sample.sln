@@ -7,6 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.console", "api.console\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.weather", "api.weather\api.weather.csproj", "{532A3144-8B2B-4A97-A49E-ADA476BB17EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{F6788D7B-EAFA-4CA7-85C9-112178CB7562}"
+	ProjectSection(SolutionItems) = preProject
+		..\assets\1.png = ..\assets\1.png
+		..\assets\2.png = ..\assets\2.png
+		..\assets\3.png = ..\assets\3.png
+		..\assets\4.png = ..\assets\4.png
+		..\assets\5.png = ..\assets\5.png
+		..\assets\6.png = ..\assets\6.png
+		..\assets\7.png = ..\assets\7.png
+		..\assets\8.png = ..\assets\8.png
+		..\assets\contains.png = ..\assets\contains.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
