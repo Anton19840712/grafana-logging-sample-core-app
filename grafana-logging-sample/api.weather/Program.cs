@@ -1,5 +1,4 @@
 using LokiLoggingProvider.Options;
-using Microsoft.Extensions.Logging.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
