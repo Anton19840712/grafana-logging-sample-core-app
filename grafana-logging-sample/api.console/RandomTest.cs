@@ -16,6 +16,10 @@ public class RandomTest(ILogger logger)
 		}
 	}
 
+	/// <summary>
+	/// Method creates random cars
+	/// </summary>
+	/// <returns></returns>
 	private string[] GenerateRandomModel()
 	{
 		string[] possibleModels = ["Sedan", "SUV", "Truck", "Coupe", "Convertible"];

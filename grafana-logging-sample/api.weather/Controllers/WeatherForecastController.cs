@@ -4,25 +4,18 @@ namespace api.weather.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
-	public class WeatherForecastController : ControllerBase
+	public class WeatherForecastController(ILogger<WeatherForecastController> logger) : ControllerBase
 	{
 		private static readonly string[] Summaries = new[]
 		{
 			"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 		};
 
-		private readonly ILogger<WeatherForecastController> _logger;
-
-		public WeatherForecastController(ILogger<WeatherForecastController> logger)
-		{
-			_logger = logger;
-		}
-
 		[HttpGet(Name = "GetWeatherForecast")]
 		public IEnumerable<WeatherForecast> Get()
 		{
 
-			_logger.LogWarning("Processing weather...");
+			logger.LogWarning("Processing weather...");
 
 			return Enumerable.Range(1, 5).Select(index => new WeatherForecast
 			{
