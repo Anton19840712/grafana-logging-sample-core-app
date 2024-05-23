@@ -7,12 +7,13 @@ using var loggerFactory = LoggerFactory.Create(
 		.AddConsole()
 		.AddLoki(loggerOptions =>
 		{
-			loggerOptions.Client = PushClient.Grpc;
+			loggerOptions.Client = PushClient.Http;
 			//loggerOptions.Formatter = Formatter.Json;
 
 			//additional filters for log search:
-			loggerOptions.StaticLabels.JobName = "loki-console-app";
-			loggerOptions.StaticLabels.AdditionalStaticLabels.Add("system-name", "loki-using");
+			loggerOptions.StaticLabels.JobName = "loki31";
+			loggerOptions.StaticLabels.AdditionalStaticLabels.Add("system31", "lokiusing31");
+			loggerOptions.Http.Address = "http://10.10.50.81:3100";
 		}));
 
 //using var loggerFactory = LoggerFactory.Create(builder => builder.AddJsonConsole());
